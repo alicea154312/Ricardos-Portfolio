@@ -1,4 +1,5 @@
 import { profile } from "@/data/profile";
+import ShieldIcon from "@/components/ShieldIcon";
 
 const links = [
   { href: "#about", label: "about" },
@@ -12,10 +13,11 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur">
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-        <a
+        <a 
           href="#top"
-          className="font-mono-label text-sm text-foreground hover:text-accent transition-colors"
-        >
+          className="flex items-center gap-2 font-mono-label text-sm text-foreground hover:text-accent transition-colors"
+          >
+          <ShieldIcon className="w-4 h-4 text-accent" />
           {profile.name.toLowerCase()}
           <span className="text-accent">@</span>
           security
@@ -24,7 +26,7 @@ export default function Nav() {
         <ul className="flex items-center gap-5 sm:gap-7">
           {links.map((link) => (
             <li key={link.href}>
-              <a
+              <a 
                 href={link.href}
                 className="font-mono-label text-xs sm:text-sm text-muted hover:text-foreground transition-colors"
               >

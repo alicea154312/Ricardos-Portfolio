@@ -35,10 +35,10 @@ that payment processors and banks deal with every day.`,
     "Other fintech / banking security teams",
   ],
 
-  email: "ricardoaao30@gmail.com",
-  // TODO: replace with your real handles
-  github: "https://github.com/yourusername",
-  linkedin: "https://linkedin.com/in/yourusername",
+  email: "alicear565@gmail.com",
+  github: "https://github.com/alicea154312",
+  linkedin: "https://www.linkedin.com/in/ricardo-alicea-101291357/",
+  Tel: "(787) 463-5933",
 
   // Put your resume PDF at /public/resume.pdf and this button will work.
   // Until then it's safe to leave as-is — the Resume section explains this.

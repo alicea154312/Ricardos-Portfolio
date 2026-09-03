@@ -11,7 +11,6 @@ export const skillGroups: SkillGroup[] = [
     items: [
       "TCP/IP",
       "Subnetting & VLANs",
-      "Firewalls (pfSense)",
       "Wireshark",
       "Nmap",
       "Cisco Packet Traer"
@@ -24,6 +23,6 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     label: "Certifications — in progress",
-    items: ["CompTIA Network+", "CompTIA Security+"],
+    items: ["Undergraduate Certificate in Networks and Fiber Optics (UCNFO)", "Cybersecurity (Offered by PUPR)"],
   },
 ];
