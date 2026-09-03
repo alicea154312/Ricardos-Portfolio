@@ -5,14 +5,15 @@
 // ─────────────────────────────────────────────────────────────
 
 export const profile = {
-  name: "Ric",
+  name: "Ricardo",
 
   // Optional: a fuller/professional version of your name for the hero
   // headline (e.g. "Ricardo Ayala"). Leave blank to just use `name` above.
-  fullName: "",
+  fullName: "Ricardo Anrdé Alicea Otero",
 
   role: "Computer Engineering Student",
   focus: "Cybersecurity & Network Security",
+  currently: " Polytechnic University of Puerto Rico",
 
   tagline:
     "Building and defending networks — from packet-level tools to segmented infrastructure modeled on real financial systems.",

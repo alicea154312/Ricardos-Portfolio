@@ -14,20 +14,13 @@ export const skillGroups: SkillGroup[] = [
       "Firewalls (pfSense)",
       "Wireshark",
       "Nmap",
+      "Cisco Packet Traer"
     ],
   },
-  {
-    label: "Security & Monitoring",
-    items: [
-      "SIEM (Wazuh)",
-      "IDS/IPS (Snort / Suricata)",
-      "Vulnerability Assessment",
-      "YARA Rules",
-    ],
-  },
+  
   {
     label: "Programming",
-    items: ["Python", "Scapy", "Bash", "C / C++", "SQL"],
+    items: ["C++", "SQL", "Java", "Linux (In Progress)"],
   },
   {
     label: "Certifications — in progress",
