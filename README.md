@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio
 
-## Getting Started
+A personal portfolio site built with Next.js, TypeScript, and Tailwind CSS —
+dark, professional, with a network/security-themed accent. Built for Vercel
+deployment.
 
-First, run the development server:
+## 1. Personalize it
+
+Everything content-related lives in three files under `data/` — you don't
+need to touch any component code:
+
+- **`data/profile.ts`** — your name, bio, target companies, email, GitHub,
+  LinkedIn, and resume link. Start here.
+- **`data/skills.ts`** — your skill groups and tags.
+- **`data/projects.ts`** — your project cards. Flip `status` to `"complete"`
+  and add `githubUrl` / `writeupUrl` as you finish each one.
+
+Also:
+
+- Drop your resume PDF at `public/resume.pdf` (the Download Resume button
+  already points there).
+- `app/icon.svg` is the browser-tab favicon — swap it if you want something
+  else.
+
+## 2. Run it locally
+
+Requires [Node.js](https://nodejs.org) 18.18+ (20+ recommended).
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 3. Deploy it on Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Push this project to a GitHub repository (create one on GitHub, then):
+   ```bash
+   git remote add origin https://github.com/<your-username>/<repo-name>.git
+   git branch -M main
+   git push -u origin main
+   ```
+   (This project already has a local git repo with an initial commit.)
+2. Go to [vercel.com](https://vercel.com) and sign in with GitHub.
+3. Click **Add New… → Project**, select your repo, and click **Import**.
+   Vercel auto-detects Next.js — you don't need to change any build settings.
+4. Click **Deploy**. In under a minute you'll get a live URL
+   (`your-project.vercel.app`).
+5. Every push to `main` auto-redeploys. You can also add a custom domain
+   later from the project's **Settings → Domains** tab.
 
-## Learn More
+## Stack
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js](https://nextjs.org) (App Router)
+- [TypeScript](https://www.typescriptlang.org)
+- [Tailwind CSS v4](https://tailwindcss.com)
+- No external font/CDN dependencies — uses the system font stack, so builds
+  never depend on reaching an outside service.
