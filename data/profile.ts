@@ -9,7 +9,7 @@ export const profile = {
 
   // Optional: a fuller/professional version of your name for the hero
   // headline (e.g. "Ricardo Ayala"). Leave blank to just use `name` above.
-  fullName: "Ricardo Anrdé Alicea Otero",
+  fullName: "Ricardo André Alicea Otero",
 
   role: "Computer Engineering Student",
   focus: "Cybersecurity & Network Security",
@@ -40,7 +40,6 @@ that payment processors and banks deal with every day.`,
   linkedin: "https://www.linkedin.com/in/ricardo-alicea-101291357/",
   Tel: "(787) 463-5933",
 
-  // Put your resume PDF at /public/resume.pdf and this button will work.
-  // Until then it's safe to leave as-is — the Resume section explains this.
+  
   resumeFile: "/resume.pdf",
 } as const;
