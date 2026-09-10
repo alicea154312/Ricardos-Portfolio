@@ -7,14 +7,21 @@ export default function Projects() {
       <p className="section-eyebrow mb-4">03 / Projects</p>
       <p className="max-w-2xl text-sm text-muted mb-8">
         A working set of projects built around network defense in a
-        financial-services context. Repos and write-ups go live as each one
-        is finished — check back, or see the status tag on each card.
+        financial-services context — check back soon.
       </p>
-      <div className="grid gap-5 sm:grid-cols-2">
-        {projects.map((project) => (
-          <ProjectCard key={project.title} project={project} />
-        ))}
-      </div>
+      {projects.length === 0 ? (
+        <div className="card p-8 text-center">
+          <p className="font-mono-label text-sm text-muted">
+            {"// projects in progress \u2014 check back soon"}
+          </p>
+        </div>
+      ) : (
+        <div className="grid gap-5 sm:grid-cols-2">
+          {projects.map((project) => (
+            <ProjectCard key={project.title} project={project} />
+          ))}
+        </div>
+      )}
     </section>
   );
 }
