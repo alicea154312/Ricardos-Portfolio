@@ -50,7 +50,7 @@ export default function ProjectCard({ project }: { project: Project }) {
       </div>
 
       <div className="mt-5 flex gap-4 font-mono-label text-xs">
-        {project.githubUrl ? (
+        {project.githubUrl && (
           <a
             href={project.githubUrl}
             className="text-accent hover:underline"
@@ -59,8 +59,6 @@ export default function ProjectCard({ project }: { project: Project }) {
           >
             View Repo →
           </a>
-        ) : (
-          <span className="text-muted/60">Repo coming soon</span>
         )}
         {project.writeupUrl && (
           <a
