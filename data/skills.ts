@@ -19,7 +19,7 @@ export const skillGroups: SkillGroup[] = [
   
   {
     label: "Programming",
-    items: ["C++", "SQL", "Java", "Linux (In Progress)"],
+    items: ["C++", "SQL", "Linux (In Progress)"],
   },
   {
     label: "Certifications — in progress",

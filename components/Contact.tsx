@@ -11,7 +11,7 @@ export default function Contact() {
     <section id="contact" className="mx-auto max-w-5xl px-6 py-16 sm:py-24">
       <p className="section-eyebrow mb-4">05 / Contact</p>
       <h2 className="text-2xl sm:text-3xl font-semibold text-foreground max-w-xl">
-        Open to internship conversations — reach out any time.
+        Open to opportunities — reach out any time.
       </h2>
       <div className="mt-8 flex flex-wrap gap-3">
         {links.map((link) => (

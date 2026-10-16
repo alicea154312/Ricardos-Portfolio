@@ -33,18 +33,6 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="mt-10">
-            <p className="font-mono-label text-xs text-muted mb-2">
-              {"// currently targeting"}
-            </p>
-            <div className="flex flex-wrap gap-2">
-              {profile.targets.map((t) => (
-                <span key={t} className="tag">
-                  {t}
-                </span>
-              ))}
-            </div>
-          </div>
         </div>
 
         <NetworkGraphic />
