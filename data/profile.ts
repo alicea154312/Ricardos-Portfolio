@@ -16,23 +16,18 @@ export const profile = {
   currently: " Polytechnic University of Puerto Rico",
 
   tagline:
-    "Building and defending networks — from packet-level tools to segmented infrastructure modeled on real financial systems.",
+    "Building and defending networks — from packet-level tools to segmented infrastructure modeled on real systems.",
 
   bio: `I'm a Computer Engineering student focused on cybersecurity and
-networking, aiming to bring hands-on network defense skills to fintech and
-banking environments. I'm currently building a portfolio of projects around
+networking, aiming to bring hands-on network defense skills. I'm currently building a portfolio of projects around
 network segmentation, intrusion detection, and log-based threat detection —
-with a specific interest in the security and network traffic challenges
-that payment processors and banks deal with every day.`,
+with a specific interest in the security and network traffic challenges.`,
 
   location: "Puerto Rico",
 
   // Companies/roles you're targeting — shown as a short list, easy to update.
   targets: [
-    "Evertec",
-    "Banco Popular de Puerto Rico",
-    "Oriental Bank",
-    "Other fintech / banking security teams",
+   
   ],
 
   email: "alicear565@gmail.com",
