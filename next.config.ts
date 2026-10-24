@@ -1,15 +1,21 @@
 import type { NextConfig } from "next";
 
-const CSP_MODE = "Content-Security-Policy-Report-Only";
+const isDev = process.env.NODE_ENV === "development";
 
+// Enforcing mode: the browser now BLOCKS anything that violates the policy.
+const CSP_MODE = "Content-Security-Policy";
 
+// 'unsafe-inline' is needed for the inline scripts/styles Next.js emits on
+// statically prerendered pages. Removing it requires nonces (middleware +
+// dynamic rendering), which is a good follow-up project.
+// 'unsafe-eval' is only added in development (Next.js dev tools need it).
 const csp = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline'",
+  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""}`,
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: blob:",
   "font-src 'self' data:",
-"connect-src 'self'",
+  "connect-src 'self'",
   "object-src 'none'",
   "base-uri 'self'",
   "form-action 'self'",
@@ -29,12 +35,10 @@ const securityHeaders = [
   { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
 ];
 
-
-
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   async headers() {
-    return[{ source: "/:path*", headers: securityHeaders}];
+    return [{ source: "/:path*", headers: securityHeaders }];
   },
 };
 
