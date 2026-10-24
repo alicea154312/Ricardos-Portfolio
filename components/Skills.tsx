@@ -12,7 +12,10 @@ export default function Skills() {
             </h3>
             <div className="flex flex-wrap gap-2">
               {group.items.map((item) => (
-                <span key={item} className="tag">
+                <span
+                  key={item}
+                  className="tag max-w-full whitespace-normal break-words"
+                >
                   {item}
                 </span>
               ))}

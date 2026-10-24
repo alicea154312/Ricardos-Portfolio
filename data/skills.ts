@@ -13,16 +13,19 @@ export const skillGroups: SkillGroup[] = [
       "Subnetting & VLANs",
       "Wireshark",
       "Nmap",
-      "Cisco Packet Traer"
+      "Cisco Packet Tracer",
     ],
   },
-  
+
   {
     label: "Programming",
     items: ["C++", "SQL", "Linux (In Progress)"],
   },
   {
-    label: "Certifications — in progress",
-    items: ["Undergraduate Certificate in Networks and Fiber Optics (UCNFO)", "Cybersecurity (Offered by PUPR)"],
+    label: "Certifications",
+    items: [
+      "Undergraduate Certificate in Networks and Fiber Optics (UCNFO) — Completed",
+      "Cybersecurity (Offered by PUPR) — In Progress",
+    ],
   },
 ];
